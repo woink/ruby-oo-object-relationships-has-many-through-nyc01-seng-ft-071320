@@ -22,7 +22,7 @@ class Customer
     end
 
     def waiters
-      meals.select { |meal| meal.waiter && meal.yrs_experience}
+      meals.map { |meal| meal.waiter }
     end
 
     
